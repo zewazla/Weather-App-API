@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/f904352e86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="flip-card-3D-wrapper">
+        <div id="flip-card" class="card">
+            <div class="flip-card-front">
+                <form autocomplete="off">
+                    <div class="search-box">
+                        <input class="searchInput" type="text" onfocus="this.value=''" name="" placeholder="City..."
+                            value="Kraków"></input>
+                        <button class="searchButton"></button>
+                    </div>
+                </form>
+                <div class="front">
+
+                    <section class="location">
+                        <div class="city"></div>
+                        <div class="date"></div>
+                        <div class="temp"></div>
+                        <img class="icon">
+                    </section>
+                    <div class="current">
+                        <span>feels <div class="temp_feels"></div></span>
+                        <span>min <div class="temp_max"></div></span>
+                        <span>max <div class="temp_min"></div></span>
+                    </div>
+                </div>
+                <button id="flip-card-btn-turn-to-back"><i class="far fa-heart fa-2x"></i></button>
+            </div>
+            <div class="flip-card-back">
+                <div class="cover">
+
+                    <div class="temp-card">
+                        <span>Sanok<div class="city-love sanok"></div></span>
+                        <span>Chrzanów<div class="city-love chrzanow"></div></span>
+                        <span>Piekło<div class="city-love pieklo"></div></span>
+                        <span>Chicago<div class="city-love chicago"></div></span>
+                    </div>
+                    <div class="cats"></div>
+
+                </div>
+                <button id="flip-card-btn-turn-to-front"><i class="fas fa-reply"></i></button>
+            </div>
+        </div>
+    </div>
+    <video autoplay muted loop>
+        <source src="cloudy.mp4">
+    </video>
+</body>
+
+</html>
